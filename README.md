@@ -1,6 +1,6 @@
 # Golang Tutorials
 
-![golang tutorials banner](https://imgur.com/bwDNJZq)
+![golang tutorials banner](https://imgur.com/bwDNJZq.png)
 
 a self-project to learn Go.
 

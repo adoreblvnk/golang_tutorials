@@ -15,6 +15,12 @@ prod by blvnk.
 - created a Hello World program.
 - compiled a Hello World executable.
 
+### Variables & Data Types
+
+### Assignment Expression & Implicit vs Explicit
+
+- default types for variables are usually 0 (for `bool` it's `false`).
+
 ## Credits
 
 - blvnk

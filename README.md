@@ -13,7 +13,7 @@ prod by blvnk.
 ### Intro to Go
 
 - created a Hello World program.
-- compiled a Hello World program.
+- compiled a Hello World executable.
 
 ## Credits
 

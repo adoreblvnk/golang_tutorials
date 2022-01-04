@@ -21,6 +21,8 @@ prod by blvnk.
 
 - default types for variables are usually 0 (for `bool` it's `false`).
 
+### Printing to Console & fmt
+
 ## Credits
 
 - blvnk

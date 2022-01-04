@@ -23,6 +23,10 @@ prod by blvnk.
 
 ### Printing to Console & fmt
 
+### Console Input & Type Conversion
+
+- Go has to catch every error . . .
+
 ## Credits
 
 - blvnk

@@ -27,6 +27,9 @@ prod by blvnk.
 
 - Go has to catch every error . . .
 
+### Arithmetic Operators & Math
+
+### Conditions & Boolean Expressions
 ## Credits
 
 - blvnk

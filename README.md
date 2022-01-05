@@ -31,6 +31,8 @@ prod by blvnk.
 
 ### Conditions & Boolean Expressions
 
+### Chained Conditionals
+
 ## Credits
 
 - blvnk

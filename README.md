@@ -24,6 +24,7 @@ prod by blvnk.
 - **Chained Conditionals** 
 - **If Else If Else**
 - **For Loops**
+- **Switch Statements**
 
 ## Credits
 

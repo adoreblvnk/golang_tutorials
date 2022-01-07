@@ -26,6 +26,7 @@ prod by blvnk.
 - **For Loops**
 - **Switch Statements**
 - **Arrays**
+- **Slices**
 
 ## Credits
 

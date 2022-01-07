@@ -25,6 +25,7 @@ prod by blvnk.
 - **If Else If Else**
 - **For Loops**
 - **Switch Statements**
+- **Arrays**
 
 ## Credits
 

@@ -27,6 +27,7 @@ prod by blvnk.
 - **Switch Statements**
 - **Arrays**
 - **Slices**
+- **Range & Slice / Array**
 
 ## Credits
 

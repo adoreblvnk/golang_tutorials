@@ -28,6 +28,7 @@ prod by blvnk.
 - **Arrays**
 - **Slices**
 - **Range & Slice / Array**
+- **Maps**
 
 ## Credits
 

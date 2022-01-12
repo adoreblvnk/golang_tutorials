@@ -29,6 +29,8 @@ prod by blvnk.
 - **Slices**
 - **Range & Slice / Array**
 - **Maps**
+- **Functions**
+  - `defer` statement defers execution of code until return statement executes.
 
 ## Credits
 

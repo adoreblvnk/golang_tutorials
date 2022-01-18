@@ -31,6 +31,8 @@ prod by blvnk.
 - **Maps**
 - **Functions**
   - `defer` statement defers execution of code until return statement executes.
+- **Advanced Functions**
+  - function closures.
 
 ## Credits
 

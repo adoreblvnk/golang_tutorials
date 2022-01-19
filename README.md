@@ -21,7 +21,7 @@ prod by blvnk.
   - Go has to catch every error . . .
 - **Arithmetic Operators & Math**
 - **Conditions & Boolean Expressions**
-- **Chained Conditionals** 
+- **Chained Conditionals**
 - **If Else If Else**
 - **For Loops**
 - **Switch Statements**
@@ -33,6 +33,9 @@ prod by blvnk.
   - `defer` statement defers execution of code until return statement executes.
 - **Advanced Functions**
   - function closures.
+- **Mutable & Immutable Data Types**
+  - Mutable\
+    ![](https://i.imgur.com/uZ5yvtJ.png)
 
 ## Credits
 

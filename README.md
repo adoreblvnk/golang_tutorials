@@ -42,6 +42,7 @@ prod by blvnk.
 - **Structs as Custom Types**
 - **Struct Methods**
 - **Interfaces**
+  - good practice to add pointers to slices / structs in case you need to access them.
 
 
 ## Credits

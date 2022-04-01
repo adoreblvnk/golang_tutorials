@@ -39,6 +39,7 @@ prod by blvnk.
 - **Pointers & Dereference Operator**
   - `*variable`: dereference. gets the value of the variable.
   - `&variable`: pointer. gets the memory address of the variable.
+- **Structs as Custom Types**
 
 
 ## Credits

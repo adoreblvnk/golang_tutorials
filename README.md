@@ -36,6 +36,10 @@ prod by blvnk.
 - **Mutable & Immutable Data Types**
   - Mutable\
     ![](https://i.imgur.com/uZ5yvtJ.png)
+- **Pointers & Dereference Operator**
+  - `*variable`: dereference. gets the value of the variable.
+  - `&variable`: pointer. gets the memory address of the variable.
+
 
 ## Credits
 

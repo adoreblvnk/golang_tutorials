@@ -16,12 +16,16 @@ func main() {
 
 	// user input
 	var username, email string
-	var userTickets int
+	var userTickets uint
 	fmt.Print("Enter your username: ")
 	fmt.Scan(&username)
 	fmt.Print("Enter your email: ")
 	fmt.Scan(&email)
 	fmt.Print("Enter the amount of tickets to purchase: ")
 	fmt.Scan(&userTickets)
+
+	remainingTickets = remainingTickets - userTickets
+
 	fmt.Printf("Thank you %v for purchasing %v tickets. You will receive a confirmation email at %v.\n", username, userTickets, email)
+	fmt.Printf("%v tickets remaining for %v.\n", remainingTickets, conferenceName)
 }

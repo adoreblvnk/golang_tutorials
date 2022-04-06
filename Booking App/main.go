@@ -16,13 +16,14 @@ func main() {
 
 	fmt.Printf("Welcome to %v booking application. \n", conferenceName)
 	fmt.Printf("We have a total of %v tickets and %v tickets left.\n", conferenceTickets, remainingTickets)
-	fmt.Println("Get your tickets here to attend.\n")
+	fmt.Println("Get your tickets here to attend.")
 
 	for remainingTickets > 0 && len(bookings) <= 50 {
+
 		// user input
 		var firstName, lastName, email string
 		var userTickets uint
-		fmt.Print("Enter your first name: ")
+		fmt.Print("\nEnter your first name: ")
 		fmt.Scan(&firstName)
 		fmt.Print("Enter your last name: ")
 		fmt.Scan(&lastName)
@@ -31,7 +32,12 @@ func main() {
 		fmt.Print("Enter the amount of tickets to purchase: ")
 		fmt.Scan(&userTickets)
 
-		if userTickets <= remainingTickets {
+		// input validation
+		isValidName := len(firstName) >= 2 && len(lastName) >= 2
+		isValidEmail := strings.Contains(email, "@")
+		isValidTicketNumber := userTickets > 0 && userTickets <= remainingTickets
+
+		if isValidName && isValidEmail && isValidTicketNumber {
 			remainingTickets = remainingTickets - userTickets // basic logic
 			bookings = append(bookings, fmt.Sprintf("%v %v", firstName, lastName))
 
@@ -45,15 +51,23 @@ func main() {
 			for _, booking := range bookings {
 				firstNames = append(firstNames, strings.Fields(booking)[0])
 			}
-			fmt.Printf("These are the first name of our bookings: %v.\n\n", firstNames)
+			fmt.Printf("These are the first name of our bookings: %v.\n", firstNames)
 
 			if remainingTickets == 0 {
 				fmt.Println("Our conference is booked out. Come back next year.")
 				break
 			}
 		} else {
-			fmt.Printf("We only have %v tickets remaining, so you can't book %v tickets!", remainingTickets, userTickets)
-			continue
+			if !isValidName {
+				fmt.Println("First name or last name entered is too short.")
+			}
+			if !isValidEmail {
+				fmt.Println("Email does not contain @ sign.")
+			}
+			if !isValidTicketNumber {
+				fmt.Println("Invalid amount of tickets.")
+			}
 		}
+
 	}
 }

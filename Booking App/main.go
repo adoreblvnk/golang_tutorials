@@ -3,7 +3,6 @@ package main
 import (
 	"booking_app/helper"
 	"fmt"
-	"strconv"
 )
 
 const conferenceTickets = 50
@@ -11,7 +10,15 @@ const conferenceTickets = 50
 // package level variables → accessible by all functions everywhere
 var conferenceName string = "Go Conference" // type inference
 var remainingTickets uint = 50              // declare type
-var bookings = make([]map[string]string, 0) // maps
+// var bookings = make([]map[string]string, 0) // maps
+var bookings = make([]UserData, 0) // structs
+
+type UserData struct {
+	firstName       string
+	lastName        string
+	email           string
+	numberOfTickets uint
+}
 
 func greetUsers() {
 	fmt.Printf("Welcome to %v booking application. \n", conferenceName)
@@ -22,8 +29,11 @@ func greetUsers() {
 func getFirstNames() []string {
 	firstNames := []string{}
 	for _, booking := range bookings {
-		// maps
-		firstNames = append(firstNames, booking["firstName"])
+		// // maps
+		// firstNames = append(firstNames, booking["firstName"])
+
+		// structs
+		firstNames = append(firstNames, booking.firstName)
 	}
 	return firstNames
 }
@@ -50,12 +60,20 @@ func getUserInput() (string, string, string, uint) {
 func bookTicket(userTickets uint, firstName string, lastName string, email string) {
 	remainingTickets = remainingTickets - userTickets // basic logic
 
-	// create map for the user
-	var userData = make(map[string]string)
-	userData["firstName"] = firstName
-	userData["lastName"] = lastName
-	userData["email"] = email
-	userData["userTickets"] = strconv.FormatUint(uint64(userTickets), 10)
+	// // create map for the user
+	// var userData = make(map[string]string)
+	// userData["firstName"] = firstName
+	// userData["lastName"] = lastName
+	// userData["email"] = email
+	// userData["userTickets"] = strconv.FormatUint(uint64(userTickets), 10)
+
+	// structs
+	var userData = UserData{
+		firstName:       firstName,
+		lastName:        lastName,
+		email:           email,
+		numberOfTickets: userTickets,
+	}
 
 	bookings = append(bookings, userData)
 	fmt.Printf("List of bookings is %v.\n", userData)
